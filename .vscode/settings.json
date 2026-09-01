@@ -1,0 +1,8 @@
+{
+    "powershell.codeFormatting.preset": "OTBS",
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+    "powershell.codeFormatting.whitespaceBetweenParameters": true,
+    "git.autofetch": true,
+    "editor.formatOnSave": true
+}

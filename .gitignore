@@ -1,0 +1,90 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# Error report
+report.*.0.001.json
+
+**/generated/ManifestTypes.d.ts
+**/out/controls/**
+src/_components/build/**
+.vs/ProjectSettings.json
+.vs/Sensei.Kaizen.PCFControls/**
+**/.webpack_cache/**
+
+# dependencies
+**/node_modules
+
+# generated directory
+**/generated
+
+# output directory
+**/out
+
+# msbuild output directories
+**/bin
+**/obj
+
+#webpack cache
+**/.webpack_cache
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# coverage directory
+**/coverage
+
+src/*/dist/
+
+src/override/
+
+src/pnpm-exec-summary.json
+
+junit.xml
+
+# Project Online to Altus Migration Tool
+4.SharePoint-Migration/Build/
+4.SharePoint-Migration/Output/
+4.SharePoint-Migration/POLExports/
+4.SharePoint-Migration/MC_Test2/
+4.SharePoint-Migration/Debug/
+Logs/
+
+# Debugging reference repositories must not track generated migration data or packages
+**/bin/
+**/obj/
+**/Build/
+**/Output/
+**/Logs/
+**/dist/
+**/coverage/
+**/packages/
+**/Files/**
+**/Tests/Results/**
+**/*.dll
+**/*.exe
+**/*.pdb
+**/*.nupkg
+**/*.mpp
+**/*.xlsx
+**/*.zip
+**/*.log
+
+# Local configuration may contain credentials, tokens, URLs, and identifiers
+**/appSettings.json
+**/appSettings.*.json
+!**/appSettings.example.json
+*.local.*
+
+# The approved migration runtime is obtained separately from the Partner Portal
+4.SharePoint-Migration/Tools/DataMigration/
+
+# Keep directory placeholders trackable while ignoring their generated contents
+!**/Files/.gitignore
+!**/Tests/Results/.gitignore

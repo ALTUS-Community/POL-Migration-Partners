@@ -1,0 +1,129 @@
+<entities>
+  <entity name="sensei_risk" displayname="Risk" etc="10169" primaryidfield="sensei_riskid" primarynamefield="sensei_name" disableplugins="false">
+    <fields>
+      <field displayname="Assigned To" name="sensei_assignedto" type="entityreference" lookupType="systemuser" customfield="true"/>
+      <field displayname="Benefit" name="sensei_benefit" type="entityreference" lookupType="sensei_benefit" customfield="true"/>
+      <field displayname="Category" name="sensei_category" type="optionsetvalue" customfield="true"/>
+      <field displayname="Consequence" name="sensei_consequence" type="optionsetvalue" customfield="true"/>
+      <field displayname="Consequence Index" name="sensei_consequenceindex" type="number" customfield="true"/>
+      <field displayname="Contingency Plan" name="sensei_contingencyplan" type="string" customfield="true"/>
+      <field displayname="Cost" name="sensei_cost" type="money" customfield="true"/>
+      <field displayname="Cost (Base)" name="sensei_cost_base" type="money" customfield="true"/>
+      <field displayname="Custom Money" name="custom_custommoney" type="money" customfield="true"/>
+      <field displayname="Custom Money (Base)" name="custom_custommoney_base" type="money" customfield="true"/>
+      <field displayname="Description" name="sensei_description" type="string" customfield="true"/>
+      <field displayname="Due Date" name="sensei_duedate" type="datetime" customfield="true"/>
+      <field displayname="ID" name="sensei_id" type="string" customfield="true"/>
+      <field displayname="Likelihood" name="sensei_likelihood" type="optionsetvalue" customfield="true"/>
+      <field displayname="Likelihood Index" name="sensei_likelihoodindex" type="number" customfield="true"/>
+      <field displayname="Mitigation Plan" name="sensei_mitigationplan" type="string" customfield="true"/>
+      <field displayname="Name" name="sensei_name" type="string" customfield="true"/>
+      <field displayname="Portfolio" name="sensei_portfolio" type="entityreference" lookupType="sensei_portfolio" customfield="true"/>
+      <field displayname="Program" name="sensei_program" type="entityreference" lookupType="sensei_program" customfield="true"/>
+      <field displayname="Project" name="sensei_project" type="entityreference" lookupType="sensei_project" customfield="true"/>
+      <field displayname="Risk" name="sensei_riskid" type="guid" primaryKey="true"/>
+      <field displayname="Risk Score" name="sensei_riskscore" type="number" customfield="true"/>
+      <field displayname="Risk Owner" name="sensei_riskowner" type="entityreference" lookupType="systemuser" customfield="true"/>
+      <field displayname="Status" name="statecode" type="state"/>
+      <field displayname="Status Reason" name="statuscode" type="status"/>
+      <field displayname="Trigger" name="sensei_trigger" type="optionsetvalue" customfield="true"/>
+      <field displayname="Trigger Description" name="sensei_triggerdescription" type="string" customfield="true"/>
+      <field displayname="Created On" name="createdon" type="datetime"/>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser"/>
+    </fields>
+  </entity>
+  <entity name="sensei_issue" displayname="Issue" etc="10157" primaryidfield="sensei_issueid" primarynamefield="sensei_name" disableplugins="false">
+    <fields>
+      <field displayname="Assigned To" name="sensei_assignedto" type="entityreference" lookupType="systemuser" customfield="true"/>
+      <field displayname="Category" name="sensei_category" type="optionsetvalue" customfield="true"/>
+      <field displayname="Cost Impact" name="sensei_costimpact" type="money" customfield="true"/>
+      <field displayname="Cost Impact (Base)" name="sensei_costimpact_base" type="money" customfield="true"/>
+      <field displayname="Description" name="sensei_description" type="string" customfield="true"/>
+      <field displayname="Due Date" name="sensei_duedate" type="datetime" customfield="true"/>
+      <field displayname="ID" name="sensei_id" type="string" customfield="true"/>
+      <field displayname="Issue" name="sensei_issueid" type="guid" primaryKey="true"/>
+      <field displayname="Name" name="sensei_name" type="string" customfield="true"/>
+      <field displayname="Portfolio" name="sensei_portfolio" type="entityreference" lookupType="sensei_portfolio" customfield="true"/>
+      <field displayname="Priority" name="sensei_priority" type="optionsetvalue" customfield="true"/>
+      <field displayname="Program" name="sensei_program" type="entityreference" lookupType="sensei_program" customfield="true"/>
+      <field displayname="Project" name="sensei_project" type="entityreference" lookupType="sensei_project" customfield="true"/>
+      <field displayname="Resolution" name="sensei_resolution" type="string" customfield="true"/>
+      <field displayname="Schedule Impact" name="sensei_scheduleimpact" type="number" customfield="true"/>
+      <field displayname="Status" name="statecode" type="state"/>
+      <field displayname="Status Reason" name="statuscode" type="status"/>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser"/>
+      <field displayname="Created On" name="createdon" type="datetime"/>
+    </fields>
+  </entity>
+  <entity name="custom_customtable" displayname="Custom Items" etc="10683" primaryidfield="custom_customtableid" primarynamefield="custom_customname" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Custom Boolean" name="custom_customboolean" type="bool" customfield="true" />
+      <field displayname="Custom Choice" name="custom_customchoice" type="optionsetvalue" customfield="true" />
+      <field displayname="Custom Date and Time" name="custom_customdateandtime" type="datetime" customfield="true" />
+      <field displayname="Custom Date Only" name="custom_customdateonly" type="datetime" customfield="true" />
+      <field displayname="Custom Decimal" name="custom_customdecimal" type="decimal" customfield="true" />
+      <field displayname="Custom Image" name="custom_customimage" type="imagedata" customfield="true" />
+      <field displayname="Custom Integer" name="custom_custominteger" type="number" customfield="true" />
+      <field displayname="Custom Name" name="custom_customname" type="string" customfield="true" />
+      <field displayname="Custom Table" name="custom_customtableid" type="guid" primaryKey="true" />
+      <field displayname="custom_customimageid" name="custom_customimageid" type="guid" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Other Date Only" name="custom_otherdateonly" type="datetime" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Project" name="custom_sensei_project" type="entityreference" lookupType="sensei_project" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+  </entity>
+  <entity name="sensei_deliverable" displayname="Deliverable" etc="10929" primaryidfield="sensei_deliverableid" primarynamefield="sensei_name" disableplugins="false">
+    <fields>
+      <field displayname="Assigned To" name="sensei_assignedto" type="entityreference" lookupType="systemuser" customfield="true" />
+      <field displayname="Category" name="sensei_category" type="optionsetvalue" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Deliverable" name="sensei_deliverableid" type="guid" primaryKey="true" />
+      <field displayname="Description" name="sensei_description" type="string" customfield="true" />
+      <field displayname="Due Date" name="sensei_duedate" type="datetime" customfield="true" />
+      <field displayname="Finish Date" name="sensei_finishdate" type="datetime" customfield="true" />
+      <field displayname="ID" name="sensei_id" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Include in Program Report" name="sensei_includeinprogramreport" type="bool" customfield="true" />
+      <field displayname="Include in PSR" name="sensei_includeinpsr" type="bool" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="sensei_name" type="string" customfield="true" />
+      <field displayname="Outcome" name="sensei_outcome" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Portfolio" name="sensei_portfolio" type="entityreference" lookupType="sensei_portfolio" customfield="true" />
+      <field displayname="Program" name="sensei_program" type="entityreference" lookupType="sensei_program" customfield="true" />
+      <field displayname="Progress Update" name="sensei_progressupdate" type="string" customfield="true" />
+      <field displayname="Project" name="sensei_project" type="entityreference" lookupType="sensei_project" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="sensei_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Target Date" name="sensei_targetdate" type="datetime" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+  </entity>
+</entities>
