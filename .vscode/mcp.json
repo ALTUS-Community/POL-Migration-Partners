@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/SenseiCloud",
+      "type": "http"
+    }
+  },
+  "inputs": []
+}
